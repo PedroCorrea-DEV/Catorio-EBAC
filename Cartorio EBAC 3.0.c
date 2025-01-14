@@ -134,7 +134,8 @@ int main()
 		printf ("\t1 -Cadastrar nome:\n");
 		printf ("\t2 -Consultar nome:\n");
 		printf ("\t3 -Excluir nome:\n\n");
-		printf("Selecione a opção desejada:");
+		printf ("\t4 -Sair do sistema\n\n");
+		printf ("Selecione a opção desejada:\n");
 			//Final menu
 			
 		scanf("%d" , &opcao);	//Armazenando escolha usuario
@@ -155,6 +156,11 @@ int main()
 	case 3:	
 		excluir();
 	break;	
+	
+	case 4:
+		printf("Obrigado pelo uso do sistema\n\n");
+		return 0;
+		break;
 			
 	default:
 		printf("Essa opção não está disponivel\n");
